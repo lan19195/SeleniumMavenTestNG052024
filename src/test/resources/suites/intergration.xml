@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1">
+    <test name="SecondTest">
+        <classes>
+            <class name="com.lantester.Bai10_Annonations.LoginTest">
+                <methods>
+                    <include name="testLoginSuccess"/>
+                </methods>
+            </class>
+
+            <class name="com.lantester.Bai10_Annonations.CustomerTest">
+                <methods>
+                    <include name="testAddCustomer"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

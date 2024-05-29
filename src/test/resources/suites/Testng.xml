@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1">
+    <groups>
+        <run>
+            <include name="testOne"/>
+        </run>
+    </groups>
+
+    <test name="First Test">
+<!--        <classes>-->
+<!--            <class name="com.lantester.Bai10_Annonations.DemoAnnotaion">-->
+<!--&lt;!&ndash;                <methods>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="testOneMethod"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                </methods>&ndash;&gt;-->
+<!--            </class>-->
+<!--        </classes>-->
+        <packages>
+            <package name="com.lantester.Bai10_Annonations"></package>
+        </packages>
+    </test>
+
+<!--    <test name="SecondTest">-->
+<!--        <classes>-->
+<!--            <class name="com.lantester.Bai10_Annonations.DemoAnnotaion">-->
+<!--                <methods>-->
+<!--                    <include name="testTwoMethod"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
