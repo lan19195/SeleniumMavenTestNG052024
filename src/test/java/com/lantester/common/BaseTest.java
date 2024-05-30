@@ -11,7 +11,7 @@ import java.time.Duration;
 public class BaseTest {
       public WebDriver driver;
 
-      @BeforeMethod
+      //@BeforeMethod //chạy trước mỗi @Test
       public void creatBrowser() {
             driver = new ChromeDriver();
             driver.manage().window().maximize();
@@ -21,7 +21,10 @@ public class BaseTest {
       }
 
       // nếu muốn viết multi browser thì viết hàm if-else như sau:
-      public void creatBrowser(String browserName) {
+      // muốn dùng hàm này để truyền tham số browserName vào thì cần tham chiếu qua parameter và chạy qua file xml (SuiteLoginTest.xml)
+      @BeforeMethod
+      @Parameters({"browser"})
+      public void creatBrowser(@Optional("Chrome") String browserName) {
             if (browserName.equals("Chrome")) {
                   driver = new ChromeDriver();
             }

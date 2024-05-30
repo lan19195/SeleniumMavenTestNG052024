@@ -16,6 +16,7 @@ public class LoginTest extends BaseTest {
 
       @Test(priority = 2)
       public void testAddCustomer(){
+            testLoginSuccess();
             driver.findElement(By.xpath("//span[normalize-space()='Customers']")).click();
       }
 
